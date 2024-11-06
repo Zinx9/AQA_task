@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { default: ApiHelper } = require('../../utils/Apihelper');
+const { default: ApiHelper } = require('../../utils/ApiHelper');
 const { postSchema } = require('../../schemas/postSchema');
 
 
