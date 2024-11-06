@@ -24,7 +24,6 @@ test.describe.serial('JSONPlaceholder API CRUD Tests with Schema Validation', ()
             const isValid = apiHelper.validateSchema(postSchema, post);
             expect(isValid).toBe(true);
         });
-        console.log(initialPostCount);
         expect(initialPostCount).toBe(100);
     });
 
@@ -64,7 +63,6 @@ test.describe.serial('JSONPlaceholder API CRUD Tests with Schema Validation', ()
         expect(isValid).toBe(true);
         expect(jsonResponse.title).toBe('Emilokan update title');
 
-        console.log(jsonResponse);
     });
 
     test('Step 5: Delete the created post by ID', async ({request}) => {
@@ -79,8 +77,7 @@ test.describe.serial('JSONPlaceholder API CRUD Tests with Schema Validation', ()
         const posts = await apiHelper.getAllPosts(request);
         const jsonResponse = await posts.json();
         const finalPostCount = jsonResponse.length;
-        
-        console.log(finalPostCount);  
+          
         expect(finalPostCount).toBe(initialPostCount);
     
         // Validate schema for each post in the list

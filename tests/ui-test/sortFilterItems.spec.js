@@ -20,16 +20,12 @@ test.describe('Inventory Sorting Test', () => {
     let sortedNames = [...itemNames].sort();
     expect(itemNames).toEqual(sortedNames);
 
-    console.log(sortedNames)
-
     // Step 3: Change sorting to Name (Z -> A)
     await inventoryPage.changeSortOrder('za');
 
     // Step 4: Verify items are sorted by Name (Z -> A)
     itemNames = await inventoryPage.getSortedItems();
     sortedNames = [...itemNames].sort().reverse();
-
-    console.log(sortedNames);
     
     expect(itemNames).toEqual(sortedNames);
   });
