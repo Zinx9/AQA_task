@@ -1,7 +1,3 @@
-Here's the revised `README.md` file, now adjusted to match the updated project structure provided.
-
----
-
 # Automated Tests for UI and API with Playwright
 
 This project includes automated tests for:
@@ -151,5 +147,3 @@ These workflows are located in `.github/workflows/` and are triggered on every p
    Ensure the `.github/workflows/api-test.yml` and `.github/workflows/ui-test.yml` files are configured correctly with appropriate permissions.
 
 ---
-
-### Happy Testing!
