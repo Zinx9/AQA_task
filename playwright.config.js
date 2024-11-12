@@ -38,6 +38,14 @@ module.exports = defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
+    // {
+    //   name: "API_test",
+    //   testMatch: "tests/api-test/apiTest.spec.js"
+    // },
+    // {
+    //   name: "UI_test",
+    //   testMatch: "tests/ui-test/sortFilterItems.spec.js"
+    // },
 
     // {
     //   name: 'firefox',
